@@ -2,6 +2,9 @@
 
 ## This is my image combining Notea and MinIO into one single image. I saw lots of people on reddit and on Notea’s GitHub that had to install MinIO simply to use Notea and didn’t need it for anything else. This image solves the problem entirely! Simply use the commands below to run Notea Stack.
 
+Original Projects:
+1. Notea: https://github.com/QingWei-Li/notea
+2. MinIO: https://github.com/minio/minio
 
 ### Docker Run
 ```bash
