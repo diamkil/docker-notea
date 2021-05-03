@@ -8,7 +8,7 @@ Original Projects:
 
 ### Docker Run
 ```bash
-docker run -d -t \
+docker run -d \
     --name=Notea \
     -p 3000:3000 \
     -p 9000:9000 \ #Optional, only if you want to be able to access MinIO's interface
