@@ -18,15 +18,13 @@ RUN \
     apk add curl ca-certificates
 
 ## Notea Setup
-
-
 COPY --from=notea /app/public /notea/public
 COPY --from=notea /app/.next /notea/.next
 COPY --from=notea /app/node_modules /notea/node_modules
 
 ## Make both work together
 COPY Docker-Start.sh MinIO-Start.sh Notea-Start.sh /
-RUN chmod +x /Docker-Start.sh MinIO-Start.sh Notea-Start.sh
+RUN chmod +x Docker-Start.sh MinIO-Start.sh Notea-Start.sh
 RUN apk add screen
 
 EXPOSE 3000
