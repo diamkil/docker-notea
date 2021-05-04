@@ -17,11 +17,10 @@ COPY --from=notea /app/.next /notea/.next
 COPY --from=notea /app/node_modules /notea/node_modules
 
 ## Make both work together
-COPY Docker-Start.sh MinIO-Start.sh Notea-Start.sh /
-RUN \
-    apk add --update curl ca-certificates screen && \
-    chmod +x Docker-Start.sh MinIO-Start.sh Notea-Start.sh
+RUN apk add --update curl ca-certificates supervisor bash
+COPY root/ /
+RUN chmod +x /etc/*-Start.sh /start
 
 EXPOSE 3000
 
-CMD /Docker-Start.sh
+CMD /bin/bash /start

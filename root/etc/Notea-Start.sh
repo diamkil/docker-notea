@@ -1,6 +1,4 @@
-#!/bin/sh
-
-cd notea
+#!/bin/bash
 
 export STORE_ACCESS_KEY=$STORE_USER
 export STORE_SECRET_KEY=$STORE_PASSWORD
