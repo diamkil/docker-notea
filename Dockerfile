@@ -22,5 +22,6 @@ COPY root/ /
 RUN chmod +x /etc/*-Start.sh /start
 
 EXPOSE 3000
+EXPOSE 9000
 
 CMD /bin/bash /start
