@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p /data/notea
+
 export STORE_ACCESS_KEY=$STORE_USER
 export STORE_SECRET_KEY=$STORE_PASSWORD
 export STORE_BUCKET=notea
