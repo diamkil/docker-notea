@@ -1,6 +1,6 @@
 # docker-notea-stack
 
-# Due to lack of time this imagine is currently not supported
+# Due to me bein in vacation and not using Notea, this imagine is currently not supported. If you want to fix something open a pr and I'll merge it if it looks good
 
 ## This is my image combining Notea and MinIO into one single image. I saw lots of people on reddit and on Notea’s GitHub that had to install MinIO simply to use Notea and didn’t need it for anything else. This image solves the problem entirely! Simply use the commands below to run Notea Stack.
 
