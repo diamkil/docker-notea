@@ -9,7 +9,7 @@ RUN echo "MinIO Pulled"
 FROM node:alpine
 
 ## MinIO Setup
-COPY --from=minio /usr/bin/minio /usr/bin/minio
+COPY --from=minio /opt/bin/minio /bin/minio
 
 ## Notea Setup
 COPY --from=notea /app/public /notea/public
